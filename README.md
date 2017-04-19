@@ -17,9 +17,9 @@ npm compile_qiniu   #用七牛链接打包
 ```
 - website
     - src                #代码开发目录
-	    + components     #组件目录
+	+ components     #组件目录
         + static         #图片等静态资源
-	    + http           #网络请求目录
+	+ http           #网络请求目录
         - view           #HTML模板
 	    - page1      #页面1
                +template.html
