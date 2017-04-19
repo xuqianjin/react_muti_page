@@ -17,16 +17,16 @@ npm compile_qiniu   #用七牛链接打包
 ```
 - website
     - src                #代码开发目录
-		+ components     #组件目录
+	    + components     #组件目录
         + static         #图片等静态资源
-		+ http           #网络请求目录
+	    + http           #网络请求目录
         - view           #HTML模板
-			- page1      #页面1
-				+template.html
-				+index.js
-			- page2      #页面2
-				+template.html
-				+index.js
+		    - page1      #页面1
+			    +template.html
+			    +index.js
+		    - page2      #页面2
+			    +template.html
+			    +index.js
     - dist               #webpack编译打包输出目录，无需建立目录可由webpack根据配置自动生成
         + css                
         + js
