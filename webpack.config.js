@@ -46,6 +46,7 @@ for (var key in htmldata) {
             removeComments: !global.__DEV__, //移除说明
             collapseWhitespace: !global.__DEV__ //代码缩进
         },
+        __QINIUURL__: global.__QINIUURL__
     })
     entry[htmldata[key]] = tempjs
     HtmlWebpackPluginData.push(temp)
