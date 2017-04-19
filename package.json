@@ -22,7 +22,7 @@
         "dev": "set NODE_ENV=development&& webpack-dev-server --devtool eval  --colors --hot --inline",
         "clean": "rimraf dist ",
         "compile": "rimraf dist && webpack",
-        "compile_product": "rimraf dist && webpack Product"
+        "compile_qiniu": "rimraf dist && webpack Qiniu"
     },
     "repository": {
         "type": "git",

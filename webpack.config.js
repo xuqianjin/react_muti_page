@@ -29,7 +29,7 @@ const config = {
 }
 const global = {
     __DEV__: process.env.NODE_ENV === 'development', //是否开发环境
-    __QINIUURL__: argv.Product ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'` //切换链接
+    __QINIUURL__: argv.Qiniu ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'` //切换链接
 }
 var htmldata = walk(config.htmlinputpath);
 var HtmlWebpackPluginData = []
