@@ -102,6 +102,7 @@ module.exports = {
                 }) //这里用了样式分离出来的插件，如果不想分离出来，可以直接这样写 loader:'style!css!sass'
             }, {
                 test: /\.(js|jsx)?$/,
+                exclude: /node_modules/,
                 loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
                 query: {
                     presets: ['react', 'es2015'],
