@@ -8,7 +8,7 @@ export default class page1 extends Component {
     }
     render() {
         return (
-            <div className={styles.badge}>sdfsf</div>
+            <div >这是page1</div>
         )
     }
 }
