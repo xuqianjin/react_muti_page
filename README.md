@@ -13,7 +13,7 @@ npm run dev         #在localhost:222运行dist
 npm compile         #打包
 npm compile_qiniu   #用七牛链接打包
 ```
-#### 目录结构
+#### 文件目录结构
 ```
 - website
     - src                #代码开发目录
