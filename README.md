@@ -1,38 +1,38 @@
 ## react_muti_page
-- react+webpack+es6 ´ò°ü¶àÒ³Ãæ
-- Êä³öÎÄ¼ş¿ÉÅäÖÃ Ä¬ÈÏÍ¬Ä¿Â¼ dist
+- react+webpack+es6 æ‰“åŒ…å¤šé¡µé¢
+- è¾“å‡ºæ–‡ä»¶å¯é…ç½® é»˜è®¤åŒç›®å½• dist
 #### USAGE
 ```
-git clone           #¿ËÂ¡ÏîÄ¿
-cd react_muti_page  #½øÈëÏîÄ¿	
-npm install         #°²×°
+git clone           #å…‹éš†é¡¹ç›®
+cd react_muti_page  #è¿›å…¥é¡¹ç›®	
+npm install         #å®‰è£…
 ```
-#### ÃüÁî
+#### å‘½ä»¤
 ```
-npm run dev         #ÔÚlocalhost:222ÔËĞĞdist
-npm compile         #´ò°ü
-npm compile_qiniu   #ÓÃÆßÅ£Á´½Ó´ò°ü
+npm run dev         #åœ¨localhost:222è¿è¡Œdist
+npm compile         #æ‰“åŒ…
+npm compile_qiniu   #ç”¨ä¸ƒç‰›é“¾æ¥æ‰“åŒ…
 ```
-#### Ä¿Â¼½á¹¹
+#### ç›®å½•ç»“æ„
 ```
 - website
-    - src                #´úÂë¿ª·¢Ä¿Â¼
-	    + components     #×é¼şÄ¿Â¼
-        + static         #Í¼Æ¬µÈ¾²Ì¬×ÊÔ´
-	    + http           #ÍøÂçÇëÇóÄ¿Â¼
-        - view           #HTMLÄ£°å
-		    - page1      #Ò³Ãæ1
-			    +template.html
-			    +index.js
-		    - page2      #Ò³Ãæ2
-			    +template.html
-			    +index.js
-    - dist               #webpack±àÒë´ò°üÊä³öÄ¿Â¼£¬ÎŞĞè½¨Á¢Ä¿Â¼¿ÉÓÉwebpack¸ù¾İÅäÖÃ×Ô¶¯Éú³É
+    - src                #ä»£ç å¼€å‘ç›®å½•
+	    + components     #ç»„ä»¶ç›®å½•
+        + static         #å›¾ç‰‡ç­‰é™æ€èµ„æº
+	    + http           #ç½‘ç»œè¯·æ±‚ç›®å½•
+        - view           #HTMLæ¨¡æ¿
+	    - page1      #é¡µé¢1
+               +template.html
+	       +index.js
+	    - page2      #é¡µé¢2
+	       +template.html
+	       +index.js
+    - dist               #webpackç¼–è¯‘æ‰“åŒ…è¾“å‡ºç›®å½•ï¼Œæ— éœ€å»ºç«‹ç›®å½•å¯ç”±webpackæ ¹æ®é…ç½®è‡ªåŠ¨ç”Ÿæˆ
         + css                
         + js
         + [html]
-    + node_modules       #ËùÊ¹ÓÃµÄnodejsÄ£¿é
-    package.json         #ÏîÄ¿ÅäÖÃ
-    webpack.config.js    #webpackÅäÖÃ
-    README.md            #ÏîÄ¿ËµÃ÷
+    + node_modules       #æ‰€ä½¿ç”¨çš„nodejsæ¨¡å—
+    package.json         #é¡¹ç›®é…ç½®
+    webpack.config.js    #webpacké…ç½®
+    README.md            #é¡¹ç›®è¯´æ˜
 ```
