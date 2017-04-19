@@ -27,9 +27,10 @@ const config = {
     qiniuUrlDev: 'cdn.baicaiyun.com',
     qiniuUrlProduct: 'http://cdn.baicaiyun.com/pc/' //七牛打包路径
 }
+var arg = argv.env && argv.env.Qiniu
 const global = {
     __DEV__: process.env.NODE_ENV === 'development', //是否开发环境
-    __QINIUURL__: argv.env.Qiniu ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'` //切换链接
+    __QINIUURL__: arg ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'` //切换链接
 }
 var htmldata = walk(config.htmlinputpath);
 var HtmlWebpackPluginData = []
