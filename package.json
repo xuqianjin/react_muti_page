@@ -12,6 +12,7 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.21.0",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -25,8 +26,8 @@
   "scripts": {
     "dev": "set NODE_ENV=development&& webpack-dev-server --devtool eval  --colors --hot --inline",
     "clean": "rimraf dist ",
-    "compile": "rimraf dist && webpack",
-    "compile_qiniu": "rimraf dist && webpack  --env.Qiniu"
+    "compile": "set NODE_ENV=production && rimraf dist && webpack",
+    "compile_qiniu": "set NODE_ENV=production && rimraf dist && webpack  --env.Qiniu"
   },
   "author": "jasonsmart",
   "license": "ISC"
