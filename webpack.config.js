@@ -30,7 +30,10 @@ const config = {
 var arg = argv.env && argv.env.Qiniu
 const global = {
     __DEV__: process.env.NODE_ENV === 'development', //是否开发环境
-    __QINIUURL__: arg ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'` //切换链接
+    __QINIUURL__: arg ? `'${config.qiniuUrlProduct}'` : `'${config.qiniuUrlDev}'`, //切换链接
+    'process.env': {
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV) //production外使用webpack压缩会提示warning
+    },
 }
 var htmldata = walk(config.htmlinputpath);
 var HtmlWebpackPluginData = []
@@ -64,6 +67,9 @@ var plugins = [
         to: './http'
     }]),
     new webpack.optimize.UglifyJsPlugin({
+        output: {
+            comments: false,
+        },
         compress: {
             warnings: false //压缩js代码
         }
@@ -107,7 +113,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader', // 'babel-loader' is also a legal name to reference
                 query: {
-                    presets: ['react', 'es2015'],
+                    presets: ['react', 'es2015','stage-0'],
                 },
             }
         ]
